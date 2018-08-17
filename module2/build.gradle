@@ -1,0 +1,6 @@
+dependencies {
+    compile 'com.google.guava:guava:18.0'
+    compile group: 'org.eclipse.jetty', name: 'jetty-server', version: '9.4.+'
+    compile group: 'org.eclipse.jetty', name: 'jetty-http', version: '9.4.+'
+    compile group: 'org.eclipse.jetty', name: 'jetty-io', version: '9.4.+'
+}

@@ -1,0 +1,15 @@
+configurations {
+    conf
+}
+
+dependencies {
+    conf 'com.google.guava:guava:18.0'
+    conf group: 'org.eclipse.jetty', name: 'jetty-server', version: '9.4.+'
+    conf group: 'org.eclipse.jetty', name: 'jetty-http', version: '9.4.+'
+    conf group: 'org.eclipse.jetty', name: 'jetty-io', version: '9.4.+'
+}
+
+task copy(type: Copy) {
+    from configurations.conf
+    into 'build/foo'
+}
